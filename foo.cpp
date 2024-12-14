@@ -6,3 +6,9 @@ class Foo{
             std::cout << "Hello" << std::endl;
         }
 };
+
+int main() {
+    Foo foo;
+    foo.bar();
+    return 0;
+}
