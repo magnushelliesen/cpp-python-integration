@@ -1,2 +1,3 @@
 # C++/Python integration test
-Test of pybind11
+
+I'm new to C++, but want to experiment and integrate with Python 😛
