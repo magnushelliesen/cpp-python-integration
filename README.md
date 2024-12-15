@@ -1,2 +1,2 @@
-# cpp_python_test
-Test av C++/Python-integrasjon
+# C++/Python integration
+Test of pybind11
