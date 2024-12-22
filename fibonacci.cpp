@@ -5,16 +5,16 @@
 namespace py = pybind11;
 
 // Function that calculates n'th Fibonacci number using recursion
-long double fibonnaci_recursive(int n) {
+long double fibonacci_recursive(int n) {
     if (n < 2) {
         return n;
     } else {
-        return fibonnaci_recursive(n - 1) + fibonnaci_recursive(n - 2);
+        return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2);
     }
 }
 
 // Function that calculates n'th Fibonacci number using iteration
-long double fibonnaci_iterative(int n) {
+long double fibonacci_iterative(int n) {
     long double n0, n1, n2;
     n0 = 0;
     n1 = 1;
@@ -32,9 +32,9 @@ long double fibonnaci_iterative(int n) {
 }
 
 // Pybind11 module definition
-PYBIND11_MODULE(fibonnaci, m) {
+PYBIND11_MODULE(fibonacci, m) {
     m.doc() = "Fibonacci module implemented in C++"; // Optional module docstring
 
-    m.def("fibonnaci_recursive", &fibonnaci_recursive, "Calculate Fibonacci number recursively");
-    m.def("fibonnaci_iterative", &fibonnaci_iterative, "Calculate Fibonacci number iteratively");
+    m.def("fibonacci_recursive", &fibonacci_recursive, "Calculate Fibonacci number recursively");
+    m.def("fibonacci_iterative", &fibonacci_iterative, "Calculate Fibonacci number iteratively");
 }

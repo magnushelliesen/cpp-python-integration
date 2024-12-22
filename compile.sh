@@ -1,1 +1,1 @@
-g++ -O3 -Wall -shared -std=c++11 -fPIC $(python3 -m pybind11 --includes) fibonnaci.cpp -o fibonnaci$(python3-config --extension-suffix)
+g++ -O3 -Wall -shared -std=c++11 -fPIC $(python3 -m pybind11 --includes) fibonacci.cpp -o fibonacci$(python3-config --extension-suffix)
